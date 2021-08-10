@@ -138,7 +138,7 @@ function perfectFriend(friendName){
 
 }
 
-console.log(perfectFriend(["sabbir", "nahid", "rakib", "promi", "tasfiya", "hasan", "rony"]));
+console.log(perfectFriend(["sabbir", "nahicd", "rakib", "promi", "tasfiya", "hasan", "rony"]));
 
           // Problem solving-4 end
 

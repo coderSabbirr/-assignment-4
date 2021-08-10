@@ -5,16 +5,22 @@ function perfectFriend(friendName){
 
     let largest = friendName[0];
     for(let i = 0; i < friendName.length; i++){
-        if(friendName[i].length > largest.length){ 
+         // error throw
+        if(typeof friendName[i] != "string") {
+            return "Please enter valid name!";  
+        }
+       // main task
+        else if(friendName[i].length == 5 ){ 
             largest = friendName[i]; 
+            return largest; 
         } 
-    }
 
-    return largest; 
+    }
+    // error throw
+    return "All name are the same length";
 
 }
 
-console.log(perfectFriend(["sabbir", "nahid", "rakib", "promi", "tasfiya", "hasan", "rony"]));
+console.log(perfectFriend(["sabxr", "sabr", "sabr", "sabr", "sabr", "sabr", "sabr"]));
 
-
-// Problem solving-4 end 
+  // Problem solving-4 end 

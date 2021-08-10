@@ -3,17 +3,18 @@
 function seerToMon(number) {
 
     const oneMon = 40;
-        
+
+   // error throw started
     if (typeof number != 'number') {
-        return "Please enter a number!";
+        return "Please give a valid number!";
     } 
     
     else if (number <= 0) {
         return "Must input positive number!";
 
-    }
+    } 
+    // main task
     else{
-
         // formula
         let convert = number / oneMon;
         return convert;
@@ -22,6 +23,6 @@ function seerToMon(number) {
 
 }
 
-console.log(seerToMon(80));
+console.log(seerToMon(550));
 
 // Problem solving-1 end
